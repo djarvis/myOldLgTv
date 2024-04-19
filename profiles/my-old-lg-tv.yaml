@@ -1,0 +1,46 @@
+# hello-world-profile
+name: my-old-lg-tv
+components:
+- id: main
+  capabilities:
+  - id: switch
+    version: 1
+  categories:
+  - name: Television
+preferences:
+  - title: "IP Address"
+    name: ipAddress
+    description: "IP Address of your old LG TV"
+    required: true
+    preferenceType: string
+    definition:
+      minLength: 7
+      maxLength: 15
+      default: 192.168.1.20
+      stringType: text
+  - title: "Share Key"
+    name: shareKey
+    description: "Share Key for your old LG TV"
+    required: true
+    preferenceType: string
+    definition:
+      default: "464855"
+      stringType: text
+  - title: "Refresh interval in seconds"
+    name: refreshInterval
+    description: Number of seconds between pinging the TV to see if it is on or off
+    required: true
+    preferenceType: integer
+    definition:
+      minimum: 1
+      maximum: 60
+      default: 2
+  - title: "HTTP Timeout"
+    name: httpTimeout
+    description: The HTTP Timeout
+    required: true
+    preferenceType: integer
+    definition:
+      minimum: 1
+      maximum: 60
+      default: 2

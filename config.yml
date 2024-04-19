@@ -1,0 +1,5 @@
+name: 'My Old LG TV'
+packageKey: 'com.smartthings.myoldlgtv'
+permissions:
+  discovery: {}
+  lan: {}
