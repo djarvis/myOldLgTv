@@ -153,31 +153,4 @@ return {
         return (code==200)
     end,
 
-
-
-
-
-
-    -- turnItOff = function(d)
-    --     log.debug("turnItOff(): begin");
-    --     local res_payload = {}
-    --     local _, code = http.request({
-    --         url = 'http://192.168.1.2:3333/light',
-    --         sink = ltn12.sink.table(res_payload),
-    --         method='POST',
-    --         source = ltn12.source.string(d),
-    --         headers = {
-    --             ["content-type"] = "application/json", -- change if you're not sending JSON
-    --             ["content-length"] = tostring(#d)
-    --         },
-    --     })
-
-    --     local resultString = table.concat(res_payload);
-    --     log.debug("callLight(): made the call to http://192.168.1.2:3333/light, response was:");
-    --     log.debug(string.format("code=[%s]", code))
-    --     log.debug("callLight(): " .. resultString)
-
-    --     print(table.concat(res_payload))
-    -- end
-
 }
